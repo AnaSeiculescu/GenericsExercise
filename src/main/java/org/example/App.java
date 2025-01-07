@@ -6,8 +6,11 @@ package org.example;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main(String[] args) {
+
+        RandomStringGenerator<String> randomStringGenerator = new RandomStringGenerator<>();
+
+        String generated = randomStringGenerator.generate("aaaa");
+        System.out.println("Generated string: " + generated);
     }
 }
