@@ -8,9 +8,9 @@ public class App
 {
     public static void main(String[] args) {
 
-        RandomStringGenerator<String> randomStringGenerator = new RandomStringGenerator<>();
+        RandomStringGenerator<Student> randomStringGenerator = new RandomStringGenerator<>();
 
-        String generated = randomStringGenerator.generate("ETWHGFI");
+        String generated = randomStringGenerator.generate(new Student("Ana", 35));
         System.out.println("Generated string: " + generated);
     }
 }
