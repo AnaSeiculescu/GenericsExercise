@@ -11,7 +11,7 @@ public class RandomStringGenerator<T> {
 		boolean useLetters = true;
 		boolean useNumbers = false;
 
-		return RandomStringUtils.random(length, useLetters, useNumbers);
+		return RandomStringUtils.random(length >= 0 ? length : -length, useLetters, useNumbers);
 
 	}
 }

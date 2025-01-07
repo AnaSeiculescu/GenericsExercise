@@ -10,7 +10,7 @@ public class App
 
         RandomStringGenerator<String> randomStringGenerator = new RandomStringGenerator<>();
 
-        String generated = randomStringGenerator.generate("aaaa");
+        String generated = randomStringGenerator.generate("ETWHGFI");
         System.out.println("Generated string: " + generated);
     }
 }
