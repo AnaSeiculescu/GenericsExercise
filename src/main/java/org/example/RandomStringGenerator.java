@@ -6,8 +6,16 @@ public class RandomStringGenerator<T> {
 
 	public String generate(T seed) {
 
-		int length = seed.hashCode()/10000000;
+		int length;
+
+		if (seed != null ) {
+			length = seed.hashCode()/10000000;
+		} else {
+			length = 0;
+		}
+
 		System.out.println("String length should be: " + length);
+		System.out.println("Seed is: " + seed);
 		boolean useLetters = true;
 		boolean useNumbers = false;
 
